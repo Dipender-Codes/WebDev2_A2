@@ -1,0 +1,135 @@
+/* Styling for the Fundraiser Page */
+body {
+    font-family: Arial, sans-serif; /* Setting the font family for the body */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+}
+
+main {
+    margin-top: 100px; /* Adjusting top margin based on navbar height */
+    padding: 20px; /* Adding padding inside the main container */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Centering items horizontally */
+    align-items: center; /* Centering items vertically */
+}
+
+/* Logo Styling */
+.navbar img {
+    height: 30px; /* Setting desired height for the logo */
+    max-height: 100%; /* Ensuring it doesn't exceed navbar height */
+    width: auto; /* Maintaining aspect ratio */
+    margin-right: 3px; /* Adding space between logo and other navbar items */
+}
+
+.fundraiser-container {
+    max-width: 800px; /* Setting maximum width for the fundraiser container */
+    width: 100%; /* Making the container responsive */
+    background: linear-gradient(to bottom right, #ffffff, #f7f9fc); /* Applying soft gradient background */
+    padding: 20px; /* Adding padding inside the container */
+    border-radius: 8px; /* Rounding the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding subtle shadow for depth */
+    text-align: center; /* Centering text inside the container */
+    border: 1px solid #007bff; /* Adding subtle blue border for definition */
+}
+
+h1 {
+    font-size: 2.5em; /* Setting font size for headings */
+    margin-bottom: 20px; /* Adding space below the heading */
+    color: #007bff; /* Changing heading color to blue */
+}
+
+p {
+    font-size: 1.2em; /* Setting font size for paragraphs */
+    line-height: 1.6; /* Adjusting line height for readability */
+    color: #333; /* Setting darker color for better readability */
+}
+
+/* Update for the donate button */
+#donateButton {
+    padding: 10px 20px; /* Adding padding inside the button */
+    background-color: #28a745; /* Setting green background for the button */
+    color: white; /* Setting text color to white */
+    border: none; /* Removing default border */
+    border-radius: 5px; /* Rounding the button corners */
+    cursor: pointer; /* Changing cursor to pointer on hover */
+    font-size: 16px; /* Setting font size for button text */
+    transition: background-color 0.3s; /* Adding smooth transition for hover effect */
+}
+
+#donateButton:hover {
+    background-color: #218838; /* Changing background color to darker green on hover */
+}
+
+h1 {
+    font-size: 2.5em; /* Setting font size for headings */
+    margin-bottom: 20px; /* Adding space below the heading */
+    color: #333; /* Setting heading color */
+}
+
+p {
+    font-size: 1.2em; /* Setting font size for paragraphs */
+    line-height: 1.6; /* Adjusting line height for readability */
+    color: #2b2525; /* Setting color for paragraph text */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f1f1f1; /* Setting light background color for footer */
+    padding: 20px; /* Adding padding inside the footer */
+    border-top: 1px solid #ddd; /* Adding subtle top border */
+}
+
+.footer-content {
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Spacing footer sections evenly */
+    align-items: flex-start; /* Aligning items at the start */
+    max-width: 1200px; /* Setting maximum width for the footer content */
+    margin: auto; /* Centering the footer content */
+}
+
+/* Footer Section Styles */
+.footer-section {
+    flex-basis: 40%; /* Setting the width of each section */
+    padding: 20px; /* Adding padding for each section */
+    margin-left: 25px; /* Adding margin to the left to shift the section right */
+}
+
+.footer-section h3 {
+    font-size: 18px; /* Setting font size for section headings */
+    margin-bottom: 10px; /* Adding space between heading and content */
+}
+
+/* Contact Info Styles */
+.contact-info {
+    list-style-type: none; /* Removing default list styling */
+    padding: 0; /* Removing padding */
+    margin: 0; /* Removing margin */
+}
+
+.contact-info li {
+    margin: 5px 0; /* Adding space between contact items */
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex; /* Using flexbox for social icons */
+    gap: 15px; /* Adding space between icons */
+}
+
+.social-icons img {
+    width: 24px; /* Setting icon width */
+    height: 24px; /* Setting icon height */
+    transition: transform 0.2s; /* Adding smooth hover effect */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarging icon on hover */
+}
+
+/* Copyright Section Styles */
+.copyright {
+    background-color: #ddd; /* Setting background color for copyright section */
+    padding: 10px; /* Adding padding for copyright section */
+    text-align: center; /* Centering the copyright text */
+    margin-top: 20px; /* Adding space above copyright section */
+}

@@ -1,0 +1,537 @@
+/* Basic Styling */
+body {
+    margin: 0; /* Removing default margin */
+    font-family: Arial, sans-serif; /* Setting default font */
+    background-color: #f4f4f4; /* Lighting gray background color */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex; /* Using flexbox for navbar layout */
+    justify-content: space-between; /* Spacing between items for better distribution */
+    align-items: center; /* Aligning items vertically */
+    background-color: #ffffff; /* Whitening background color for navbar */
+    padding: 8px 20px; /* Padding for navbar height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtling shadow effect */
+    position: absolute; /* Initially absolute within hero */
+    top: 20px; /* Spacing from the top */
+    left: 50%; /* Center the navbar */
+    transform: translateX(-50%); /* Centering adjustment */
+    width: 80%; /* Initial width of navbar */
+    border-top-left-radius: 25px; /* Rounded corners on top left */
+    border-top-right-radius: 25px; /* Rounded corners on top right */
+    border-bottom-left-radius: 25px; /* Rounded corners on bottom left */
+    border-bottom-right-radius: 25px; /* Rounded corners on bottom right */
+    z-index: 1000; /* Ensuring navbar stays above other content */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+.container {
+    width: 100%; /* Ensuring container fills navbar */
+    display: flex; /* Using flexbox for item alignment */
+    justify-content: space-between; /* Better spacing for items */
+    align-items: center; /* Centering items vertically */
+}
+
+.navbar.sticky {
+    position: fixed; /* Making navbar fixed when scrolling */
+    width: 100%; /* Full width when sticky */
+    left: 0; /* Aligning to the left */
+    top: 0; /* Sticking to top */
+    border-radius: 0; /* Removing rounded edges when sticky */
+    transform: none; /* Resetting transform */
+}
+
+.navbar a {
+    text-decoration: none; /* Removing underline from links */
+    color: #000000; /* Default link color */
+    font-size: 16px; /* Font size for links */
+    font-weight: 700; /* Bold font for links */
+    margin: 0 10px; /* Horizontal margin for links */
+    padding: 6px 10px; /* Padding for link size */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smoothning transition for background and text color */
+}
+
+.navbar a.active {
+    background-color: #007bff; /* Background color for active link */
+    color: white; /* Texting color for active link */
+    border: 2px solid #f7fafd; /* Border for active link */
+}
+
+.left, .right {
+    display: flex; /* Using flexbox for left and right sections */
+    align-items: center; /* Center vertically */
+}
+
+.left a {
+    text-decoration: none; /* Removing underline from links */
+    color: #000000; /* Default link color */
+    font-size: 16px;  /* Font size for links */
+    font-weight: 700; /* Bold font for links */
+    margin: 10 10px; /* Adjusting margin for even spacing */
+}
+
+.right a {
+    text-decoration: none; /* Removing underline from links */
+    color: #000000; /* Default link color */
+    font-size: 16px; /* Font size for links */
+    font-weight: 700; /* Bold font for links */
+    margin: 0px 30px; /* Adjusted margin for even spacing */
+}
+
+.logo {
+    margin: 0 20px; /* Spacing around logo */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Changing text color on hover */
+}
+
+/* Logo Styling */
+.navbar img {
+    height: 30px; /* Seting desired height for logo */
+    max-height: 100%; /* Ensuring it doesn't exceed navbar height */
+    width: auto; /* Maintaining aspect ratio */
+    margin-right: 10px; /* Spacing between logo and other navbar items */
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Position relative for child elements */
+    height: 450px; /* Seting height for hero section */
+    background: url('./Images/Background.jpg') no-repeat center center/cover; /* Background image */
+    display: flex; /* Using flexbox for vertical alignment */
+    flex-direction: column; /* Column layout */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center text alignment */
+    padding-top: 100px; /* Space above content */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Font size for main heading */
+    margin-bottom: 15px; /* Spacing below heading */
+    font-weight: 700; /* Bold font for heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Font size for paragraph */
+    margin-bottom: 25px; /* Spacing below paragraph */
+}
+
+/* For words inside hero */
+.hero-content {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+    text-align: center; /* Center text */
+}
+
+.hero-content h1 {
+    font-size: 36px; /* Font size for hero content heading */
+    font-weight: bold; /* Bold font for heading */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+.hero-content p {
+    font-size: 18px; /* Font size for hero content paragraph */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+.start-button {
+    background-color: #007bff; /* Background color for button */
+    color: #fff; /* Text color for button */
+    padding: 12px 24px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 1rem; /* Font size for button text */
+    font-weight: bold; /* Bold font for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.start-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Main Content */
+main {
+    margin-top: 100px; /* Space above main content */
+    padding: 20px; /* Padding for main content */
+    background-color: #fff; /* White background for main content */
+}
+
+/* General Information Section */
+.general-info {
+    padding: 60px 20px; /* Padding for general info section */
+    background-color: #ffffff; /* White background for section */
+    text-align: center; /* Center text */
+    line-height: 1.8; /* Line height for readability */
+}
+
+.general-info h2 {
+    font-size: 2.5rem; /* Font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.general-info p {
+    font-size: 1.1rem; /* Font size for paragraph */
+    margin-bottom: 15px; /* Space below paragraph */
+    color: #666; /* Gray color for text */
+}
+
+/* Discover Section */
+.discover {
+    text-align: center; /* Center text */
+    padding: 60px 20px; /* Padding for discover section */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.discover h2 {
+    font-size: 2.5rem; /* Font size for heading */
+    margin-bottom: 30px; /* Space below heading */
+    font-weight: bold; /* Bold font for heading */
+}
+
+.fundraiser-list {
+    display: flex; /* Use flexbox for list */
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+}
+
+/* Privacy Policy Section */
+.privacy-policy {
+    padding: 40px; /* Padding for privacy policy section */
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center text */
+    margin: 0 auto; /* Center section */
+    max-width: 800px; /* Max width for section */
+}
+
+/* Filter */
+.filter {
+    display: inline-block; /* Inline block for filter button */
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px 20px; /* Padding for filter button */
+    border: 1px solid #ddd; /* Border for button */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.filter i {
+    margin-left: 5px; /* Space between icon and text */
+}
+
+.filter:hover {
+    background-color: #007bff; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Search Form */
+.form-group {
+    margin-bottom: 20px; /* Space below form group */
+}
+
+
+label {
+    display: block; /* Display label as block */
+    margin-bottom: 5px; /* Space below label */
+    font-weight: bold; /* Bold font for label */
+    color: #333; /* Dark color for label */
+}
+
+/* Input and Select Styling */
+input, select {
+    width: 100%; /* Full width for inputs and selects to utilize available space */
+    padding: 10px; /* Padding for better touch/click area and aesthetics */
+    border: 1px solid #ccc; /* Light gray border for inputs and selects */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px; /* Padding for buttons to increase click area and improve appearance */
+    border: none; /* Remove default border for a cleaner look */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #007bff; /* Bootstrap primary color for the button background */
+    color: white; /* White text color for contrast against the background */
+    cursor: pointer; /* Pointer cursor to indicate the button is clickable */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change on hover */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue background on hover for feedback */
+}
+
+/* Error Message Styling */
+#error {
+    color: red; /* Red color for error messages to attract attention */
+    text-align: center; /* Center text for better presentation */
+    margin-top: 20px; /* Space above the error message */
+}
+
+/* Results Section Styling */
+#results {
+    margin-top: 30px; /* Space above the results section */
+}
+
+/* Form Group Button Styling */
+.form-group button {
+    width: 48%; /* Width of buttons in the form group, allowing two buttons in a row */
+    margin: 5px 1%; /* Margin around buttons for spacing */
+    box-sizing: border-box; /* Ensure padding and margin are included in the total width */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically on smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer sections vertically */
+        text-align: center; /* Center align footer content */
+    }
+
+    .footer-section {
+        flex-basis: 100%; /* Each footer section takes full width */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Reduce font size for hero heading */
+    }
+
+    .start-button {
+        font-size: 1rem; /* Reduce font size for start button */
+        padding: 10px 20px; /* Adjust padding for start button */
+    }
+
+    .discover h2 {
+        font-size: 1.8rem; /* Reduce font size for discover section heading */
+    }
+    
+}
+
+/* CSS for Active Fundraisers Card Layout */
+.fundraisers-container {
+    width: 80%; /* Width of the container for fundraisers */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.fundraisers-list {
+    display: flex; /* Use flexbox for layout of fundraiser cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-around; /* Distribute space around cards */
+    margin-top: 20px; /* Space above the fundraisers list */
+}
+
+/* Individual Fundraiser Card Styling */
+.fundraiser-card {
+    width: 250px; /* Fixed width for each fundraiser card */
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth effect */
+    margin-bottom: 20px; /* Space below each card */
+    border-radius: 8px; /* Rounded corners for cards */
+    overflow: hidden; /* Prevent overflow of content */
+    transition: transform 0.3s; /* Smooth transition for scaling effect on hover */
+}
+
+/* Fundraiser Card Hover Effect */
+.fundraiser-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+/* Fundraiser Image Styling */
+.fundraiser-image {
+    width: 100%; /* Full width for the image */
+    height: 150px; /* Fixed height for the image */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    background-color: #ddd; /* Placeholder color for images that aren't loaded */
+}
+
+/* Fundraiser Information Section Styling */
+.fundraiser-info {
+    padding: 15px; /* Padding for internal spacing */
+}
+
+/* Fundraiser Info Heading Styling */
+.fundraiser-info h3 {
+    font-size: 18px; /* Font size for fundraiser title */
+    margin: 10px 0; /* Space above and below the title */
+}
+
+/* Fundraiser Info Description Styling */
+.fundraiser-info p {
+    font-size: 14px; /* Font size for fundraiser description */
+    color: #555; /* Dark gray color for description text */
+}
+
+/* Fundraiser Progress Bar Styling */
+.fundraiser-progress {
+    width: 100%; /* Full width for the progress bar */
+    background-color: #f1f1f1; /* Light gray background for the bar */
+    border-radius: 10px; /* Rounded corners for the progress bar */
+    overflow: hidden; /* Prevent overflow of inner content */
+    height: 8px; /* Fixed height for the progress bar */
+    margin-top: 10px; /* Space above the progress bar */
+}
+
+/* Progress Bar Filling */
+.fundraiser-progress-bar {
+    height: 100%; /* Full height of the parent progress bar */
+    background-color: #4caf50; /* Green color for the filled portion of the bar */
+    transition: width 0.4s ease-in-out; /* Smooth transition for width changes */
+}
+
+/* Inspiring Story Card Styles */
+.inspiring-story-container {
+    position: relative; /* Position relative for absolute positioning of child elements */
+    height: 300px; /* Fixed height for the inspiring story container */
+    background-image: linear-gradient(to bottom, #34C759, #2E865F); /* Gradient background */
+    background-size: 100% 200px; /* Background size adjustment */
+    background-position: 0% 100%; /* Initial background position */
+    transition: background-position 0.5s ease-out; /* Smooth transition for background movement */
+    margin-bottom: 80px; /* Space below the container */
+    margin-top: 100px; /* Space above the container */
+}
+
+/* Inspiring Story Card Inner Styles */
+.inspiring-story-card {
+    position: absolute; /* Absolute positioning for centering the card */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    width: 80%; /* Width of the story card */
+    padding: 20px; /* Padding for internal spacing */
+    background-color: #fff; /* White background for the story card */
+    border: 1px solid #ddd; /* Light gray border for the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.5s ease-out; /* Smooth transition for scaling effect */
+}
+
+/* Inspiring Story Image Styling */
+.inspiring-story-image {
+    width: 100%; /* Full width for the image */
+    height: 150px; /* Fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio for images */
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top of the image */
+}
+
+/* Inspiring Story Content Styling */
+.inspiring-story-content {
+    padding: 20px; /* Padding for internal spacing */
+    font-size: 18px; /* Font size for content text */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Hover Effect for Inspiring Story Container */
+.inspiring-story-container:hover {
+    background-position: 0% 0%; /* Move background position on hover */
+}
+
+/* Hover Effect for Inspiring Story Card */
+.inspiring-story-container:hover .inspiring-story-card {
+    transform: translate(-50%, -50%) scale(1.2); /* Scale up the card on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Centered Heading Styles */
+.inspiring-stories {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 50px; /* Space below the heading */
+}
+
+.inspiring-stories h2 {
+    font-size: 40px; /* Large font size for heading */
+    font-weight: 600; /* Bold font weight for emphasis */
+    color: #121312; /* Dark color for the heading */
+    text-transform: uppercase; /* Uppercase text for stylistic choice */
+    letter-spacing: 2px; /* Space between letters */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Paragraph Styles under Inspiring Stories */
+.inspiring-stories p {
+    font-size: 18px; /* Font size for description text */
+    color: #666; /* Gray color for description text */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f1f1f1; /* Light background color for footer */
+    padding: 20px; /* Padding for the footer */
+    border-top: 1px solid #ddd; /* Subtle top border for separation */
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between footer sections */
+    align-items: flex-start; /* Align items at the start */
+    max-width: 1200px; /* Maximum width for the footer content */
+    margin: auto; /* Center the footer content */
+}
+
+/* Footer Section Styles */
+.footer-section {
+    flex-basis: 40%; /* Width of each section in the footer */
+    padding: 20px; /* Padding for each section */
+    margin-left: 25px; /* Space to the left of each section */
+}
+
+/* Footer Section Heading Styles */
+.footer-section h3 {
+    font-size: 18px; /* Font size for section headings */
+    margin-bottom: 10px; /* Space below the section heading */
+}
+
+/* Contact Info List Styles */
+.contact-info {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Contact Info Item Styles */
+.contact-info li {
+    margin: 5px 0; /* Space between contact items */
+}
+
+/* Social Icons Layout */
+.social-icons {
+    display: flex; /* Use flexbox for layout of social icons */
+    gap: 15px; /* Space between icons */
+}
+
+/* Social Icon Image Styles */
+.social-icons img {
+    width: 24px; /* Set width for social icons */
+    height: 24px; /* Set height for social icons */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Social Icon Hover Effect */
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Copyright Section Styles */
+.copyright {
+    background-color: #ddd; /* Background color for copyright section */
+    padding: 10px; /* Padding for copyright section */
+    text-align: center; /* Center the copyright text */
+    margin-top: 20px; /* Space above copyright section */
+}

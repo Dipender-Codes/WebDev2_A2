@@ -1,0 +1,344 @@
+/* Setting basic styles for the body element */
+body {
+    margin: 0; /* Resetting margin to eliminate default spacing */
+    font-family: Arial, sans-serif; /* Setting font family for the page */
+    background-color: #f4f4f4; /* Giving a light gray background color */
+}
+
+/* Enabling smooth scrolling behavior */
+html {
+    scroll-behavior: smooth; /* Implementing smooth scrolling */
+}
+
+/* Styling the navigation bar */
+.navbar {
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Distributing space between items */
+    align-items: center; /* Aligning items vertically at the center */
+    background-color: #ffffff; /* Setting white background for the navbar */
+    padding: 8px 20px; /* Providing padding for comfort */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding subtle shadow for depth */
+    position: absolute; /* Positioning the navbar absolutely within the hero */
+    top: 20px; /* Setting spacing from the top */
+    left: 50%; /* Centering the navbar */
+    transform: translateX(-50%); /* Adjusting position to center it */
+    width: 80%; /* Setting initial width */
+    border-top-left-radius: 25px; /* Creating rounded top-left corner */
+    border-top-right-radius: 25px; /* Creating rounded top-right corner */
+    border-bottom-left-radius: 25px; /* Creating rounded bottom-left corner */
+    border-bottom-right-radius: 25px; /* Creating rounded bottom-right corner */
+    z-index: 1000; /* Ensuring it stays above other content */
+    transition: all 0.3s ease; /* Adding smooth transition for style changes */
+}
+
+/* Container for navbar items */
+.container {
+    width: 100%; /* Ensuring the container fills the navbar */
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Distributing space between items */
+    align-items: center; /* Centering items vertically */
+}
+
+/* Applying styles when the navbar becomes sticky */
+.navbar.sticky {
+    position: fixed; /* Making it fixed when scrolling */
+    width: 100%; /* Setting full width when sticky */
+    left: 0; /* Aligning to the left */
+    top: 0; /* Sticking to the top */
+    border-radius: 0; /* Removing rounded edges */
+    transform: none; /* Resetting transform */
+}
+
+/* Styling the navbar links */
+.navbar a {
+    text-decoration: none; /* Removing underline from links */
+    color: #000000; /* Setting link color to black */
+    font-size: 16px; /* Setting font size for links */
+    font-weight: 700; /* Making links bold */
+    margin: 0 10px; /* Adjusting horizontal margin */
+    padding: 6px 10px; /* Providing padding for comfort */
+    border-radius: 5px; /* Creating rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Adding smooth transition for hover effects */
+}
+
+/* Highlighting the active link */
+.navbar a.active {
+    background-color: #007bff; /* Setting active link background */
+    color: white; /* Changing active link text color to white */
+    border: 2px solid #f7fafd; /* Adding border for active link */
+}
+
+/* Styling for left and right sections in the navbar */
+.left, .right {
+    display: flex; /* Using flexbox for layout */
+    align-items: center; /* Centering vertically */
+}
+
+/* Styling left navbar links */
+.left a {
+    text-decoration: none; /* Removing underline from links */
+    color: #000000; /* Setting link color to black */
+    font-size: 16px; /* Setting font size for links */
+    font-weight: 700; /* Making links bold */
+    margin: 10 10px; /* Adjusting margin for even spacing */
+}
+
+/* Styling right navbar links */
+.right a {
+    text-decoration: none; /* Removing underline from links */
+    color: #000000; /* Setting link color to black */
+    font-size: 16px; /* Setting font size for links */
+    font-weight: 700; /* Making links bold */
+    margin: 0px 30px; /* Adjusting margin for even spacing */
+}
+
+/* Styling the logo in the navbar */
+.logo {
+    margin: 0 20px; /* Providing space around logo */
+}
+
+/* Applying hover effect for navbar links */
+.navbar a:hover {
+    color: #007bff; /* Changing link color on hover */
+}
+
+/* Styling for navbar logo image */
+.navbar img {
+    height: 30px; /* Setting desired height for logo */
+    max-height: 100%; /* Ensuring logo doesn't exceed navbar height */
+    width: auto; /* Maintaining aspect ratio of logo */
+    margin-right: 10px; /* Providing space between logo and other navbar items */
+}
+
+/* Styling for the hero section */
+.hero {
+    position: relative; /* Positioning relatively for child elements */
+    height: 400px; /* Setting height for the hero section */
+    background: url('../Images/Background.jpg') no-repeat center center/cover; /* Setting background image */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Aligning items vertically */
+    justify-content: center; /* Centering items vertically */
+    align-items: center; /* Centering items horizontally */
+    color: white; /* Setting text color to white */
+    text-align: center; /* Centering text */
+}
+
+/* Styling for hero section main heading */
+.hero h1 {
+    font-size: 2.5em; /* Setting font size for main heading */
+}
+
+/* Styling for hero section paragraph */
+.hero p {
+    font-size: 1.5em; /* Setting font size for paragraph */
+}
+
+/* Styling for the main section */
+main {
+    margin-top: 100px; /* Adding margin on top for spacing */
+    padding: 20px; /* Providing padding for comfort */
+}
+
+/* Styling the search container */
+.search-container {
+    max-width: 800px; /* Setting maximum width for the search container */
+    margin: 0 auto; /* Centering the search container */
+}
+
+/* Styling headings */
+h2 {
+    text-align: center; /* Centering heading text */
+    margin-bottom: 20px; /* Adding space below heading */
+}
+
+/* Styling for form groups */
+.form-group {
+    margin-bottom: 20px; /* Adding space below form group */
+}
+
+/* Styling labels */
+label {
+    display: block; /* Displaying labels as block elements */
+    margin-bottom: 5px; /* Adding space below label */
+    font-weight: bold; /* Making labels bold */
+}
+
+/* Styling input and select elements */
+input, select {
+    width: 100%; /* Making input/select fill the width */
+    padding: 10px; /* Providing padding for comfort */
+    border: 1px solid #ccc; /* Adding border */
+    border-radius: 5px; /* Creating rounded corners */
+    box-sizing: border-box; /* Ensuring padding is included in width */
+}
+
+/* Styling buttons */
+button {
+    padding: 10px 20px; /* Providing padding for comfort */
+    border: none; /* Removing default border */
+    border-radius: 5px; /* Creating rounded corners */
+    background-color: #007bff; /* Setting button background color */
+    color: white; /* Setting button text color to white */
+    cursor: pointer; /* Changing cursor to pointer on hover */
+    font-size: 16px; /* Setting font size for button text */
+}
+
+/* Adding hover effect for buttons */
+button:hover {
+    background-color: #0056b3; /* Darkening button background on hover */
+}
+
+/* Styling error message */
+#error {
+    color: red; /* Setting error text color to red */
+    text-align: center; /* Centering error message */
+    margin-top: 20px; /* Adding space above error message */
+}
+
+/* Styling results section */
+#results {
+    margin-top: 30px; /* Adding space above results section */
+}
+
+/* Results Container */
+.results-container {
+    display: flex; /* Setting display to flex for layout */
+    flex-wrap: wrap; /* Allowing items to wrap in the container */
+    gap: 20px; /* Adding space between items */
+    justify-content: center; /* Centering items horizontally */
+}
+
+/* Fundraiser Card */
+.fundraiser-card {
+    background-color: #fff; /* Setting background color to white */
+    border-radius: 12px; /* Creating rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    overflow: hidden; /* Hiding overflow for rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adding smooth transitions for effects */
+    width: 300px; /* Setting fixed width for each card */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Aligning items vertically */
+}
+
+/* Applying hover effect for fundraiser cards */
+.fundraiser-card:hover {
+    transform: translateY(-5px); /* Lifting card slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deepening shadow on hover */
+}
+
+/* Image Styling */
+.fundraiser-image img {
+    width: 100%; /* Making image fill the width of the card */
+    height: 200px; /* Setting fixed height for images */
+    object-fit: cover; /* Covering image without distortion */
+}
+
+/* Fundraiser Information */
+.fundraiser-info {
+    padding: 15px; /* Providing padding for comfort */
+    text-align: center; /* Centering text */
+}
+
+.fundraiser-info h3 {
+    margin: 0 0 10px; /* Resetting margin and adding space below */
+    font-size: 1.5rem; /* Setting font size for heading */
+    color: #333; /* Setting heading color */
+}
+
+.fundraiser-info p {
+    margin: 5px 0; /* Adding space above and below paragraph */
+    color: #666; /* Setting paragraph color */
+}
+
+/* Progress Bar */
+.fundraiser-progress {
+    background-color: #f3f3f3; /* Setting light background for progress bar */
+    border-radius: 5px; /* Creating rounded corners */
+    overflow: hidden; /* Hiding overflow for rounded corners */
+    margin: 10px 0; /* Adding vertical margin for spacing */
+}
+
+.fundraiser-progress-bar {
+    height: 12px; /* Setting height for the progress bar */
+    background-color: #4caf50; /* Setting progress bar color */
+    transition: width 0.4s; /* Adding smooth transition for width change */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f1f1f1; /* Setting light background color for footer */
+    padding: 20px; /* Providing padding for comfort */
+    border-top: 1px solid #ddd; /* Adding subtle top border */
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex; /* Using flexbox for footer layout */
+    justify-content: space-between; /* Distributing space between sections */
+    align-items: flex-start; /* Aligning items at the start */
+    max-width: 1200px; /* Setting maximum width for footer content */
+    margin: auto; /* Centering footer content */
+}
+
+/* Footer Section Styles */
+.footer-section {
+    flex-basis: 40%; /* Setting width of each footer section */
+    padding: 20px; /* Providing padding for each section */
+    margin-left: 25px; /* Adding left margin to shift section right */
+}
+
+.footer-section h3 {
+    font-size: 18px; /* Setting font size for section headings */
+    margin-bottom: 10px; /* Adding space below heading */
+}
+
+/* Contact Info Styles */
+.contact-info {
+    list-style-type: none; /* Removing default list styling */
+    padding: 0; /* Removing padding */
+    margin: 0; /* Removing margin */
+}
+
+.contact-info li {
+    margin: 5px 0; /* Adding space between contact items */
+}
+
+/* Social Icons Layout */
+.social-icons {
+    display: flex; /* Using flexbox for social icons */
+    gap: 15px; /* Adding space between icons */
+}
+
+.social-icons img {
+    width: 24px; /* Setting width for icons */
+    height: 24px; /* Setting height for icons */
+    transition: transform 0.2s; /* Adding smooth hover effect */
+}
+
+/* Enlarging icons on hover */
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarging on hover */
+}
+
+/* Copyright Section Styles */
+.copyright {
+    background-color: #ddd; /* Setting background color for copyright section */
+    padding: 10px; /* Providing padding for comfort */
+    text-align: center; /* Centering copyright text */
+    margin-top: 20px; /* Adding space above copyright section */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .results-container {
+        flex-direction: column; /* Changing layout to column on small screens */
+    }
+
+    .fundraiser-card {
+        width: 100%; /* Setting width to fill container on small screens */
+    }
+
+    h3 {
+        font-size: 1.25rem; /* Adjusting font size for headings */
+    }
+}

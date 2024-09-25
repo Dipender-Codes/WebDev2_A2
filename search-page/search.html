@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Setting character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile -->
+    <title>Search Fundraisers</title> <!-- Title of the webpage -->
+    <!-- <link rel="stylesheet" href="style.css"> --> <!-- Link to the main stylesheet (commented out) -->
+    <link rel="stylesheet" href="search.css"> <!-- Link to the specific stylesheet for search page -->
+    <script defer src="search.js"></script> <!-- Link to the JavaScript file, loading after HTML -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar"> <!-- Header element for the navigation bar -->
+        <div class="container"> <!-- Container to hold navbar elements -->
+            <div class="left"> <!-- Left section of the navbar -->
+                <a href="../index.html" class="nav-link">Home</a> <!-- Link to home page -->
+                <a href="search.html" class="nav-link active">Search Fundraisers</a> <!-- Link to search page with active class -->
+            </div>
+            <div class="logo"> <!-- Logo section -->
+                <img src="../logo-svg.svg" alt="FUND ME LOGO" width="50px" /> <!-- Logo image -->
+            </div>
+            <div class="right"> <!-- Right section of the navbar -->
+                <a href="../fundraiser-page/fundraiser.html" class="nav-link">Fundraiser</a> <!-- Link to fundraiser page -->
+                <a href="../privacy-page/privacy.html" class="nav-link">Privacy Policy</a> <!-- Link to privacy policy page -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero"> <!-- Hero section for main message -->
+        <div class="hero-content"> <!-- Container for hero content -->
+            <h1>Find Your Cause</h1> <!-- Main heading -->
+            <p>Search for fundraisers by category, city, or organizer</p> <!-- Subheading -->
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <main> <!-- Main content area -->
+        <div class="search-container"> <!-- Container for the search functionality -->
+            <h2>Search Fundraisers</h2> <!-- Subheading for the search section -->
+            <form id="searchForm" class="search-form"> <!-- Form for searching fundraisers -->
+                <div class="form-group"> <!-- Group for organizer input -->
+                    <label for="organizer">Organizer Name</label> <!-- Label for organizer input -->
+                    <input type="text" id="organizer" name="organizer" placeholder="Enter organizer name"> <!-- Input for organizer name -->
+                </div>
+
+                <div class="form-group"> <!-- Group for city input -->
+                    <label for="city">City</label> <!-- Label for city input -->
+                    <input type="text" id="city" name="city" placeholder="Enter city"> <!-- Input for city name -->
+                </div>
+
+                <div class="form-group"> <!-- Group for category selection -->
+                    <label for="category">Category</label> <!-- Label for category dropdown -->
+                    <select id="category" name="category"> <!-- Dropdown for category selection -->
+                        <option value="">Select Category</option> <!-- Default option -->
+                        <option value="Medical">Medical</option> <!-- Medical category option -->
+                        <option value="Sports">Sports</option> <!-- Sports category option -->
+                        <option value="Animals">Animals</option> <!-- Animals category option -->
+                        <option value="Cancer Treatment">Cancer Treatment</option> <!-- Cancer Treatment category option -->
+                    </select>
+                </div>
+
+                <div class="button-group"> <!-- Group for search and clear buttons -->
+                    <button type="button" id="searchButton">Search</button> <!-- Search button -->
+                    <button type="button" id="clearButton" class="clear-btn">Clear</button> <!-- Clear button -->
+                </div>
+            </form>
+            <div id="error" class="error"></div> <!-- Container for displaying error messages -->
+            <!-- Results container -->
+            <div id="results" class="results-container"></div> <!-- Container for displaying search results -->
+            <!-- <div id="results" class="results-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;"></div> --> <!-- Commented out alternative results container layout -->
+        </div>
+    </main>
+    <footer> <!-- Footer section -->
+        <div class="footer-content"> <!-- Container for footer content -->
+            <div class="footer-section"> <!-- Section for contact information -->
+                <h3>Contact Us</h3> <!-- Subheading for contact information -->
+                <p>We're here to help with any questions or support you need.</p> <!-- Description -->
+                <ul class="contact-info"> <!-- Unordered list for contact details -->
+                    <li><strong>Email:</strong> <a href="mailto:support@gofundme.com">support@gofundme.com</a></li> <!-- Email contact -->
+                    <li><strong>Phone:</strong> (123) 456-7890</li> <!-- Phone contact -->
+                    <li><strong>Address:</strong> 123 Crowdfunding Ave, Fundraising City, FC 56789</li> <!-- Address -->
+                    <li><strong>Support Hours:</strong> Mon-Fri, 9 AM - 5 PM</li> <!-- Support hours -->
+                </ul>
+            </div>
+            <div class="footer-section"> <!-- Section for social media links -->
+                <h3>Follow Us</h3> <!-- Subheading for social media -->
+                <div class="social-icons"> <!-- Container for social media icons -->
+                    <a href="https://www.instagram.com" target="_blank"><img src="../social icons/instagram.svg" alt="Instagram" /></a> <!-- Instagram link -->
+                    <a href="https://www.github.com" target="_blank"><img src="../social icons/github.svg" alt="GitHub" /></a> <!-- GitHub link -->
+                    <a href="https://www.facebook.com" target="_blank"><img src="../social icons/facebook.svg" alt="Facebook" /></a> <!-- Facebook link -->
+                    <a href="https://www.linkedin.com" target="_blank"><img src="../social icons/linkedin.svg" alt="LinkedIn" /></a> <!-- LinkedIn link -->
+                </div>
+            </div>
+            <div class="footer-section"> <!-- Section for quick links -->
+                <h3>Quick Links</h3> <!-- Subheading for quick links -->
+                <ul> <!-- Unordered list for quick links -->
+                    <li><a href="./index.html">Home</a></li> <!-- Quick link to home page -->
+                    <li><a href="search.html">Search Fundraisers</a></li> <!-- Quick link to search fundraisers page -->
+                    <li><a href="../fundraiser-page/fundraiser.html">Fundraiser</a></li> <!-- Quick link to fundraiser page -->
+                    <li><a href="../privacy-page/privacy.html">Privacy Policy</a></li> <!-- Quick link to privacy policy page -->
+                </ul>
+            </div>
+        </div>
+        <div class="copyright"> <!-- Copyright section -->
+            <p>&copy; 2023 GoFundMe. All rights reserved.</p> <!-- Copyright text -->
+        </div>
+    </footer>
+</body>
+
+</html>
